@@ -1,28 +1,34 @@
 #include <stdio.h>
+
 /**
- * main - print combination of two number
+ * main - print two number
  *
  * Return: always 0
  */
 
 int main(void)
 {
-	int k;
+	int i = '0';
 	int j;
 
-	for (k = '0' ; k <= '9' ; k++)
+	while (i <= '9')
 	{
-		for (j = '0' ; j <= '9' ; j++)
+		j = '0';
+		while (j <= '9')
 		{
-			if (k < j)
+			if (i < j)
 			{
-				putchar(k);
+				putchar(i);
 				putchar(j);
-				if (k != '8' || (k == '8' && j != '9'))
+				if (i < '8' || j < '9')
+				{
 					putchar(',');
-				putchar(' ');
+					putchar(' ');
+				}
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
