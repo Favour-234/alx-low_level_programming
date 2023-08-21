@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * puts2 - print other character of a string starting with a new line
@@ -9,12 +8,16 @@
 
 void puts2(char *str)
 {
+	int i;
 	int a = 0;
 
 	while (str[a] != '\0')
 	{
-		_putchar(str[a]);
-		a += 2;
+		a++;
+	}
+	for (i = 0; i < a; i += 2)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
