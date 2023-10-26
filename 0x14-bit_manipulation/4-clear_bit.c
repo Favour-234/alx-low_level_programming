@@ -13,10 +13,10 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	unsigned long int nek = 1UL << index;
 
 	*n = *n & ~nek;
-	return (1);
 
 	if (index >= (8 * sizeof(unsigned long int)))
 	{
 	return (-1);
 	}
+	return (1);
 }

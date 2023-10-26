@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * grt_bit - to get the value of bit of index
+ * get_bit - to get the value of bit of index
  * @n: to seacrh for index
  * @index: the num of bit of index
  *
